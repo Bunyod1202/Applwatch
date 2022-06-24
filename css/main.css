@@ -84,10 +84,16 @@ a {
   margin-right: 40px;
 }
 .nav-link {
+  transition: all 0.3s linear;
+  padding: 6px 0;
   font-weight: 400;
 font-size: 15px;
 line-height: 150%;
 color: var(--main-title-black-color);
+border-bottom: 3px solid transparent;
+}
+.nav-link:hover {
+border-bottom: 3px solid #333333;
 }
 .search {
   border:none;
@@ -149,6 +155,7 @@ color: var(--main-black-color);
   border-left:  3px solid #888888;
 }
 .btn {
+  transition: all 0.3s linear;
   width: 260px;
   background-color: #EA625C;
   padding: 12px 0;
@@ -158,6 +165,9 @@ color: var(--main-black-color);
 font-size: 18px;
 line-height: 150%;
 text-transform: uppercase;
+}
+.btn:hover {
+background-color: #C9514C;
 }
 .list {
   padding: 70px 0;
@@ -207,16 +217,21 @@ color: var(--main-title-black-color);
   background-color: var(--main-cubick-black-color);
 }
 .learn-more {
+  transition: all 0.8s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: var(--main-btn-red-color);
   font-weight: 700;
-font-size: 16px;
-line-height: 160%;
+  font-size: 16px;
+  line-height: 160%;
+}
+.learn-more:hover::before {
+  width: 60px;
+
 }
 .learn-more::before {
  content: "";
@@ -225,6 +240,7 @@ line-height: 160%;
  border-bottom: 3px solid #EA625C;
  text-transform: uppercase;
  margin-right: 10px;
+ transition: all 0.3s linear;
 }
 .breathable {
   padding: 70px 0;
@@ -240,6 +256,7 @@ line-height: 160%;
   background-repeat: no-repeat;
   background-size: 100% ;
   background-position: center;
+  background-attachment: fixed;
 }
 .intro .card {
   margin-left: auto;
